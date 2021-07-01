@@ -1,6 +1,6 @@
 const inquirer = require("inquirer");
 const mysql = require("msql");
-const { error } = require("console");
+
 const connection = mysql.createConnection({
   host: "localhost",
 
