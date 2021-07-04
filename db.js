@@ -12,7 +12,7 @@ const connection = mysql.createConnection({
 
   // Be sure to update with your own MySQL password!
   password: "",
-  database: "employee_trackerDB",
+  database: "employee_TrackerDB",
 });
 
 const mysql = require('mysql');
@@ -28,18 +28,13 @@ const connection = mysql.createConnection({
 
   // Be sure to update with your own MySQL password!
   password: '',
-  database: 'employee_trackerDB',
+  database: 'employee_TrackerDB',
 });
 
-// const afterConnection = () => {
-//   connection.query('SELECT * FROM departments', (err, res) => {
-//     if (err) throw err;
-//     console.log(res);
-//     connection.end();
-//   });
-// };
+
 
 connection.connect((err) => {
+  
   if (err) throw err;
   console.log(`connected as id ${connection.threadId}`);
   afterConnection();
